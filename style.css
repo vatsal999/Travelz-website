@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 
 *{
@@ -13,6 +13,12 @@ body{
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
 .logo{
     display: flex;
     align-items: baseline;
@@ -34,7 +40,7 @@ h3{
 }
 
 .navlinks ul{
-    float: right;
+   /* float: right;*/
     display: flex;
     list-style-type: none;
     margin: 40px 100px 0 20px;
@@ -58,4 +64,50 @@ h3{
 .navlinks ul li a:hover{
     border-color: white;
     
+}
+/*
+header ::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+*/
+
+.firstpage {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: auto;
+}
+
+.firstpage .leftside p{
+    font-size: 110px;
+    margin: 90px;
+    font-family: "PT Sans",sans-serif;
+    text-transform: uppercase;
+}
+
+.firstpage .rightside p{
+    font-size: 50px;
+    margin: 110px 130px 0px 90px;
+    font-family: "PT Sans",sans-serif;
+}
+.firstpage .rightside a{
+    position: absolute;
+    margin: 10px 90px;
+    font-size: 45px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    padding: 3px 10px;
+    font-family: sans-serif;
+    border: 2px solid black;
+    box-sizing: border-box;
+    transition: ease-in 0.1s;
+}
+.firstpage .rightside a:hover{
+    background-color: black;
+    color: white;
 }
